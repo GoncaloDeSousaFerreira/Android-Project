@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/photo_itemFav"
+        android:layout_width="192dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/id_itemFav"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="1"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textSize="33sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/photo_itemFav"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_itemFav"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif"
+        android:text="Título"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/id_itemFav"
+        app:layout_constraintStart_toStartOf="@+id/id_itemFav"
+        app:layout_constraintTop_toBottomOf="@+id/id_itemFav" />
+
+    <TextView
+        android:id="@+id/genre_itemFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Categoria"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/title_itemFav"
+        app:layout_constraintStart_toStartOf="@+id/title_itemFav"
+        app:layout_constraintTop_toBottomOf="@+id/title_itemFav" />
+
+    <Button
+        android:id="@+id/btn_delete_itemBook"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colortrans"
+        android:drawableLeft="@drawable/ic_baseline_delete_forever_24"
+        android:fontFamily="sans-serif"
+        android:text="Apagar"
+        app:layout_constraintEnd_toEndOf="@+id/photo_itemFav"
+        app:layout_constraintStart_toStartOf="@+id/photo_itemFav"
+        app:layout_constraintTop_toBottomOf="@+id/photo_itemFav" />
+
+    <Button
+        android:id="@+id/btn_update_itemBook"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colortrans"
+        android:drawableLeft="@drawable/ic_baseline_backup_24"
+        android:fontFamily="sans-serif"
+        android:text="Atualizar"
+        app:layout_constraintEnd_toEndOf="@+id/genre_itemFav"
+        app:layout_constraintStart_toStartOf="@+id/genre_itemFav"
+        app:layout_constraintTop_toBottomOf="@+id/photo_itemFav" />
+
+    <Button
+        android:id="@+id/btn_share_itemBook"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colortrans"
+        android:drawableLeft="@drawable/ic_baseline_share_24"
+        android:fontFamily="sans-serif"
+        android:text="Partilhar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_update_itemBook"
+        app:layout_constraintStart_toStartOf="@+id/btn_update_itemBook"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update_itemBook" />
+
+    <Button
+        android:id="@+id/btn_fav"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colortrans"
+        android:drawableLeft="@drawable/ic_baseline_star_24fav"
+        android:text="Favorito"
+        app:layout_constraintEnd_toEndOf="@+id/btn_delete_itemBook"
+        app:layout_constraintStart_toStartOf="@+id/btn_delete_itemBook"
+        app:layout_constraintTop_toBottomOf="@+id/btn_delete_itemBook" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
