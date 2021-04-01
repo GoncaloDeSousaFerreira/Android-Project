@@ -85,9 +85,9 @@
         android:id="@+id/btn_delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        android:text="Apagar Conta"
+        android:layout_marginBottom="35dp"
         android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Apagar Conta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imagephoto_profile"
         app:layout_constraintStart_toStartOf="@+id/imagephoto_profile" />
